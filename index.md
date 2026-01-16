@@ -6,7 +6,7 @@
 
 Bem-vindo ao **GroovGym**! Sua privacidade é extremamente importante para nós. Esta Política de Privacidade descreve de forma clara e transparente quais informações coletamos, como as utilizamos, como as protegemos e quais são seus direitos em relação aos seus dados pessoais.
 
-O GroovGym é um aplicativo de acompanhamento de treinos de musculação, disponível para dispositivos Android (smartphone) e Wear OS (smartwatch). Nosso compromisso é oferecer uma experiência de fitness completa enquanto mantemos seus dados seguros e sob seu controle.
+O GroovGym é um aplicativo de acompanhamento de treinos de musculação, disponível para dispositivos Android (smartphone) e Wear OS (smartwatch). Nosso compromisso é oferecer uma experiência de fitness completa enquanto mantemos seus dados seguros e sob seu controle (arquitetura *Local First*).
 
 **Contato para questões de privacidade:**
 📧 [groovgym@gmail.com](mailto:groovgym@gmail.com)
@@ -25,7 +25,7 @@ Antes de entrar nos detalhes, aqui está um resumo do que você precisa saber:
 | **Pedimos** sua permissão antes de acessar sensores de saúde | **Não compartilhamos** dados de saúde com anunciantes |
 | **Mantemos** suas fotos de progresso apenas no seu dispositivo | **Não usamos** suas fotos para qualquer finalidade externa |
 | **Exibimos** anúncios na versão gratuita (removíveis via assinatura) | **Não permitimos** que anunciantes acessem seus treinos |
-| **Coletamos** dados de desempenho via Google Play Vitals | **Não coletamos** dados de identificação pessoal para analytics |
+| **Coletamos** dados de desempenho via Google Play Vitals | **Não exigimos** criação de conta (login/senha) para uso |
 
 ---
 
@@ -43,7 +43,6 @@ Para melhorar a qualidade e estabilidade do aplicativo, coletamos dados técnico
 | **Uso de memória** | Consumo de RAM | Otimização de recursos |
 | **Versão do Android** | Sistema operacional do dispositivo | Compatibilidade |
 | **Modelo do dispositivo** | Fabricante e modelo | Compatibilidade |
-| **Versão do app** | Qual versão está instalada | Suporte técnico |
 
 > **Importante:** Estes dados são coletados automaticamente pelo Google Play, são **anônimos** e agregados, e utilizados apenas para melhorar o aplicativo.
 >
@@ -55,7 +54,7 @@ Informações fornecidas voluntariamente para personalização:
 | Dado | Obrigatório? | Finalidade |
 | :--- | :---: | :--- |
 | Nome | Não | Personalização da interface |
-| E-mail | Não | Identificação do perfil |
+| E-mail | Não | Identificação do perfil (apenas local) |
 | Data de nascimento | Não | Cálculo de idade para métricas de fitness |
 | Gênero | Não | Personalização de recomendações |
 | Foto de perfil | Não | Personalização visual |
@@ -126,7 +125,7 @@ Este recurso envolve dados extremamente sensíveis.
 Armazenamos localmente suas rotinas de treino, configurações de tema (Dark/Light/Neon), unidades de peso (kg/lbs), timers de descanso e outras preferências de personalização.
 
 ### 3.9 Dados Relacionados a Publicidade (Versão Gratuita)
-Utilizamos **Google AdMob**.
+Utilizamos **Google AdMob** na versão gratuita.
 
 * **Coletado:** ID de publicidade (anônimo), informações do dispositivo, interações com anúncios, IP (país/região).
 * **NÃO Compartilhado:** Treinos, medições, fotos, perfil, dados de saúde.
@@ -166,16 +165,33 @@ Utilizamos seus dados exclusivamente para:
 
 ---
 
-## 6. Compartilhamento de Dados
+## 6. Compartilhamento de Dados e Serviços de Terceiros
 
-Não vendemos, alugamos ou transferimos suas informações pessoais. Utilizamos os seguintes serviços técnicos:
+Não vendemos, alugamos ou transferimos suas informações pessoais. Utilizamos os seguintes serviços técnicos para viabilizar o app:
 
+### 6.1 Serviços de Analytics e Anúncios
 | Serviço | Fornecedor | Finalidade | Dados Compartilhados |
 | :--- | :--- | :--- | :--- |
 | **AdMob** | Google | Anúncios (Versão Free) | ID de publicidade, dados técnicos, IP |
 | **Play Vitals** | Google | Performance/Crashes | Dados técnicos anônimos |
+
+### 6.2 Processamento de Pagamentos
+| Serviço | Fornecedor | Finalidade | Dados Compartilhados |
+| :--- | :--- | :--- | :--- |
+| **Google Play Billing** | Google | Assinaturas Premium | Status da assinatura. |
+
+> **Nota sobre Pagamentos:** As transações financeiras para a versão Premium são processadas inteiramente pelo Google. O GroovGym **não coleta nem tem acesso** aos seus dados bancários ou números de cartão de crédito.
+
+### 6.3 Sincronização e Sensores
+| Serviço | Fornecedor | Finalidade | Dados Compartilhados |
+| :--- | :--- | :--- | :--- |
 | **Wear API** | Google | Sincronização Local | Nenhum (apenas transporte Bluetooth) |
 | **Health API** | Google | Sensores do Relógio | Nenhum (processamento local) |
+
+### 6.4 Integração com Health Connect
+Caso você opte por utilizar a integração com o Health Connect (quando disponível) para sincronizar seus dados com outros aplicativos:
+
+> O uso e a transferência de informações recebidas das APIs do Health Connect para qualquer outro aplicativo seguirão a [Política de Permissões do Health Connect](https://support.google.com/googleplay/android-developer/answer/9888170), incluindo os requisitos de **Uso Limitado**.
 
 ---
 
@@ -198,15 +214,21 @@ Não vendemos, alugamos ou transferimos suas informações pessoais. Utilizamos 
 
 ---
 
-## 9. Retenção de Dados
+## 9. Retenção e Exclusão de Dados
 
+### 9.1 Período de Retenção
 | Tipo de Dado | Período de Retenção |
 | :--- | :--- |
 | Perfil, Treinos, Medições | Até você excluir o dado ou desinstalar o app |
 | Fotos de progresso | Até você excluir a foto ou desinstalar o app |
 | Preferências | Até você redefinir ou desinstalar o app |
 
-> **Nota:** Não realizamos exclusão automática. Você tem controle total.
+### 9.2 Exclusão Automática
+Não realizamos exclusão automática. Você tem controle total.
+
+### 9.3 Ausência de Criação de Conta (Exclusão via Web)
+O GroovGym funciona sem a necessidade de criar uma conta de usuário (sem login/senha). Como não mantemos contas de usuário em nossos servidores, **não possuímos um mecanismo de "exclusão de conta" via web**, pois não detemos seus dados.
+> Para excluir completamente seus dados, basta desinstalar o aplicativo do seu dispositivo ou utilizar a função "Limpar Dados" nas configurações do Android.
 
 ---
 
